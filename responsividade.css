@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+
+.secao1{
+    width: 33%;
+    border: 1px solid black;
+
+}
+
+.secao2{
+    width: 33%;
+    border: 1px solid blue;
+}
+
+.secao3{
+    width: 33%;
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 900px) {
+    .secao1{width: 30%;}
+    .secao2{width: 60%;}
+    .secao3{width: 10%;}
+}
+
+@media only screen and (max-width: 600px) {
+    .container{display: block;}
+    .secao1{width: 100%;}
+    .secao2{width: 100%;}
+    .secao3{display: none;}
+}
