@@ -6,10 +6,15 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='form01.css'>
-    <script src='form01.js'></script>
+    <script src='form01.js' defer></script>
+    <script>
     
+    </script>
 </head>
 <body>
+    <script>
+         console.log('Meu primeiro exemplo em JS')
+    </script>
     <div class="container">
         <div class="telalogin">
             <form action="">
@@ -18,25 +23,36 @@
                         Cadastro de Usuário
                     </label>
                 </div>
+                <div id="msg">
+                    <p id="mensgaem"></p>
+                </div>
                 <div>
                     <label>E-mail: </label> <br>
                     <input type="email" name="email" id="email"
-                    onfocus="mudaremail()";>
+                    onfocus="destacar(this);"
+                    onblur="normal(this)"
+                    >
                 </div>
                 <div>
                     <label>Senha: </label> <br>
-                    <input type="password" name="senha">
+                    <input type="password" name="senha"
+                    onfocus="destacar(this);"
+                    onblur="normal(this)"
+                    >
                 </div>
                 <div>
                     <label>Nome: </label> <br>
-                    <input type="text" name="nome">
+                    <input type="text" name="nome"
+                    onfocus="destacar(this);"
+                    onblur="normal(this)"
+                    >
                 </div>
                 <div>
                     <label>Data de Nascimento: </label> <br>
                     <input type="date" name="datanascimento">
                 </div>
                 <div class="button">
-                    <input type="button" onclick="enviar()" value="Enviar"
+                    <input type="button" onclick="funcao()" value="Enviar"
                     >
                 </div>
             </form>
