@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/calcMedia/madiapondi.css'>
+    <script >
+        function cript(){
+            let msg = document.getElementById('msg').value;
+
+            let c = msg.charAt(0);
+
+            window.alert(c.charCodeAt(0))
+        }
+
+    </script>
+</head>
+<body>
+    <form ><h2>Cripotografia de Cesar</h2></form>
+    <div>
+        <label>Digite uma mensgem:</label>
+        <input type="text" id="msg">
+    </div>
+    <div class="botao" onclick="cript()">Criptografar</div>
+    
+    <div></div>
+</body>
+</html>
